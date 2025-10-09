@@ -6170,7 +6170,7 @@
             return {
               sectionNames: {
                 "/": "Home",
-                "/our-platform": "Our Platform",
+                "/#": "Our Platform",
                 "/power": "Power",
                 "/digital-infrastructure": "Digital Infrastructure",
                 "/compute": "Compute",
@@ -6739,7 +6739,7 @@
                           {
                             staticClass: "main-link",
                             attrs: {
-                              to: "/our-platform",
+                              to: "/#",
                               "aria-label": "Our Platform",
                             },
                           },
@@ -7374,7 +7374,7 @@
               escapeHandler: null,
               navigationLinks: [
                 { text: "Home", href: "/" },
-                { text: "Our Platform", href: "/our-platform" },
+                { text: "Our Platform", href: "/#" },
                 { text: "About Us", href: "/about-us" },
                 { text: "News & Insights", href: "/news-insights" },
                 { text: "Investors", href: "/investors" },
@@ -9142,7 +9142,7 @@
             name: "news-insights",
           },
           {
-            path: "/our-platform",
+            path: "/#",
             component: function () {
               return Object(k.m)(
                 Promise.all([n.e(0), n.e(4), n.e(9), n.e(10), n.e(130)]).then(
