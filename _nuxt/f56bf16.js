@@ -7084,7 +7084,7 @@
                     "div",
                     { staticClass: "footer-terms" },
                     [
-                      t("NuxtLink", { attrs: { to: "/terms" } }, [
+                      t("NuxtLink", { attrs: { to: "/#" } }, [
                         e._v("\n\t\t\t\t\tTerms of Use\n\t\t\t\t"),
                       ]),
                     ],
@@ -7095,7 +7095,7 @@
                     "div",
                     { staticClass: "footer-terms" },
                     [
-                      t("NuxtLink", { attrs: { to: "/privacy-policy" } }, [
+                      t("NuxtLink", { attrs: { to: "/#" } }, [
                         e._v("\n\t\t\t\t\tPrivacy Policy\n\t\t\t\t"),
                       ]),
                     ],
@@ -7914,9 +7914,9 @@
                   [e._v("Client Dashboard")],
                 ),
                 e._v(" "),
-                t("a", { attrs: { href: "/terms" } }, [e._v("Terms of Use")]),
+                t("a", { attrs: { href: "/#" } }, [e._v("Terms of Use")]),
                 e._v(" "),
-                t("a", { attrs: { href: "/privacy-policy" } }, [
+                t("a", { attrs: { href: "/#" } }, [
                   e._v("Privacy Policy"),
                 ]),
               ]);
@@ -9162,14 +9162,14 @@
             name: "power",
           },
           {
-            path: "/privacy-policy",
+            path: "/#",
             component: function () {
               return Object(k.m)(n.e(132).then(n.bind(null, 917)));
             },
             name: "privacy-policy",
           },
           {
-            path: "/terms",
+            path: "/#",
             component: function () {
               return Object(k.m)(n.e(133).then(n.bind(null, 918)));
             },
