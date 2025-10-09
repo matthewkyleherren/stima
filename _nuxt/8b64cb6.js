@@ -561,7 +561,7 @@
             description: { type: String },
             buttonHeading: { type: String },
             buttonText: { type: String, default: "All Case Studies" },
-            buttonLink: { type: String, default: "/#/insights" },
+            buttonLink: { type: String, default: "/#" },
             articles: {
               type: Array,
               default: function () {
