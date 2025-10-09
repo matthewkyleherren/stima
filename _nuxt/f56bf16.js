@@ -6172,10 +6172,10 @@
                 "/": "Home",
                 "/#": "Our Platform",
                 "/power": "Power",
-                "/digital-infrastructure": "Digital Infrastructure",
-                "/compute": "Compute",
-                "/about-us": "About Us",
-                "/news-insights": "News & Insights",
+                "/#": "Digital Infrastructure",
+                "/#": "Compute",
+                "/#": "About Us",
+                "/#": "News & Insights",
                 "/investors": "Investors",
               },
               burgerTop: "M0 8 L11 8 L15 6 L24 6",
@@ -6665,7 +6665,7 @@
                   t("div", { staticClass: "read-more-contents" }, [
                     t("div", { staticClass: "read-more-details col" }, [
                       t("p", { staticClass: "description" }, [
-                        e._v("High Performance Computing"),
+                        e._v("Smart Energy Platform"),
                       ]),
                       e._v(" "),
                       t("div", { staticClass: "button-container" }, [
@@ -6755,7 +6755,7 @@
                           {
                             staticClass: "main-link",
                             attrs: {
-                              to: "/about-us",
+                              to: "/#",
                               "aria-label": "About Us",
                             },
                           },
@@ -6780,7 +6780,7 @@
                           {
                             staticClass: "main-link",
                             attrs: {
-                              to: "/news-insights",
+                              to: "/#",
                               "aria-label": "News & Insights",
                             },
                           },
@@ -6792,7 +6792,7 @@
                           {
                             staticClass: "secondary-link",
                             attrs: {
-                              to: "/news-insights",
+                              to: "/#",
                               "aria-label": "Overview",
                             },
                           },
@@ -6813,7 +6813,7 @@
                           {
                             staticClass: "secondary-link",
                             attrs: {
-                              to: "/news-insights/in-the-news",
+                              to: "/#/in-the-news",
                               "aria-label": "In the News",
                             },
                           },
@@ -6825,7 +6825,7 @@
                           {
                             staticClass: "secondary-link",
                             attrs: {
-                              to: "/news-insights/resources",
+                              to: "/#/resources",
                               "aria-label": "Resources",
                             },
                           },
@@ -7375,8 +7375,8 @@
               navigationLinks: [
                 { text: "Home", href: "/" },
                 { text: "Our Platform", href: "/#" },
-                { text: "About Us", href: "/about-us" },
-                { text: "News & Insights", href: "/news-insights" },
+                { text: "About Us", href: "/#" },
+                { text: "News & Insights", href: "/#" },
                 { text: "Investors", href: "/investors" },
               ],
             };
@@ -7666,7 +7666,7 @@
                               "nuxt-link",
                               {
                                 staticClass: "business-item-link",
-                                attrs: { to: "/digital-infrastructure" },
+                                attrs: { to: "/#" },
                               },
                               [
                                 t(
@@ -7772,7 +7772,7 @@
                               "nuxt-link",
                               {
                                 staticClass: "business-item-link",
-                                attrs: { to: "/compute" },
+                                attrs: { to: "/#" },
                               },
                               [
                                 t(
@@ -7916,9 +7916,7 @@
                 e._v(" "),
                 t("a", { attrs: { href: "/#" } }, [e._v("Terms of Use")]),
                 e._v(" "),
-                t("a", { attrs: { href: "/#" } }, [
-                  e._v("Privacy Policy"),
-                ]),
+                t("a", { attrs: { href: "/#" } }, [e._v("Privacy Policy")]),
               ]);
             },
           ],
@@ -8594,15 +8592,15 @@
           { text: "Contact Us", href: "/investors/contact" },
         ],
         c = [
-          { text: "Overview", href: "/news-insights" },
-          { text: "Press Releases", href: "/news-insights/press-releases" },
-          { text: "In the News", href: "/news-insights/in-the-news" },
-          { text: "Resources", href: "/news-insights/resources" },
+          { text: "Overview", href: "/#" },
+          { text: "Press Releases", href: "/#/press-releases" },
+          { text: "In the News", href: "/#/in-the-news" },
+          { text: "Resources", href: "/#/resources" },
         ],
         d = function (path) {
           return path.startsWith("/investors")
             ? "investors"
-            : path.startsWith("/news-insights")
+            : path.startsWith("/#")
               ? "news"
               : null;
         },
@@ -9088,7 +9086,7 @@
         },
         routes: [
           {
-            path: "/about-us",
+            path: "/#",
             component: function () {
               return Object(k.m)(
                 Promise.all([n.e(1), n.e(8), n.e(107)]).then(n.bind(null, 910)),
@@ -9097,7 +9095,7 @@
             name: "about-us",
           },
           {
-            path: "/compute",
+            path: "/#",
             component: function () {
               return Object(k.m)(
                 Promise.all([n.e(5), n.e(108)]).then(n.bind(null, 911)),
@@ -9106,7 +9104,7 @@
             name: "compute",
           },
           {
-            path: "/digital-infrastructure",
+            path: "/#",
             component: function () {
               return Object(k.m)(
                 Promise.all([n.e(5), n.e(109)]).then(n.bind(null, 912)),
@@ -9131,7 +9129,7 @@
             name: "kitchen-sink",
           },
           {
-            path: "/news-insights",
+            path: "/#",
             component: function () {
               return Object(k.m)(
                 Promise.all([n.e(18), n.e(3), n.e(124)]).then(
@@ -9263,7 +9261,7 @@
             name: "kitchen-sink-type",
           },
           {
-            path: "/news-insights/events",
+            path: "/#/events",
             component: function () {
               return Object(k.m)(
                 Promise.all([n.e(3), n.e(122)]).then(n.bind(null, 926)),
@@ -9272,7 +9270,7 @@
             name: "news-insights-events",
           },
           {
-            path: "/news-insights/in-the-news",
+            path: "/#/in-the-news",
             component: function () {
               return Object(k.m)(
                 Promise.all([n.e(17), n.e(3), n.e(123)]).then(
@@ -9283,7 +9281,7 @@
             name: "news-insights-in-the-news",
           },
           {
-            path: "/news-insights/insights",
+            path: "/#/insights",
             component: function () {
               return Object(k.m)(
                 Promise.all([n.e(19), n.e(3), n.e(126)]).then(
@@ -9294,7 +9292,7 @@
             name: "news-insights-insights",
           },
           {
-            path: "/news-insights/press-releases",
+            path: "/#/press-releases",
             component: function () {
               return Object(k.m)(
                 Promise.all([n.e(20), n.e(3), n.e(128)]).then(
@@ -9305,7 +9303,7 @@
             name: "news-insights-press-releases",
           },
           {
-            path: "/news-insights/resources",
+            path: "/#/resources",
             component: function () {
               return Object(k.m)(
                 Promise.all([n.e(3), n.e(129)]).then(n.bind(null, 930)),
@@ -9325,7 +9323,7 @@
             name: "index",
           },
           {
-            path: "/news-insights/insights/:slug",
+            path: "/#/insights/:slug",
             component: function () {
               return Object(k.m)(
                 Promise.all([n.e(1), n.e(6), n.e(125)]).then(n.bind(null, 932)),
@@ -9334,7 +9332,7 @@
             name: "news-insights-insights-slug",
           },
           {
-            path: "/news-insights/press-releases/:slug",
+            path: "/#/press-releases/:slug",
             component: function () {
               return Object(k.m)(
                 Promise.all([n.e(1), n.e(6), n.e(127)]).then(n.bind(null, 933)),
@@ -9345,391 +9343,383 @@
           {
             path: "/2025/07/02/hut-8-secures-five-year-capacity-contracts-with-ieso-for-310-mw-of-power-generation-assets/",
             redirect:
-              "/news-insights/press-releases/hut-8-secures-five-year-capacity-contracts-with-ieso-for-310-mw-of-power-generation-assets",
+              "/#/press-releases/hut-8-secures-five-year-capacity-contracts-with-ieso-for-310-mw-of-power-generation-assets",
             name: "redirect--2025-07-02-hut-8-secures-five-year-capacity-contracts-with-ieso-for-310-mw-of-power-generation-assets-",
           },
           {
             path: "/2025/06/30/hut-8-energizes-vega-data-center/",
-            redirect:
-              "/news-insights/press-releases/hut-8-energizes-vega-data-center",
+            redirect: "/#/press-releases/hut-8-energizes-vega-data-center",
             name: "redirect--2025-06-30-hut-8-energizes-vega-data-center-",
           },
           {
             path: "/2025/06/24/hut-8-amends-and-expands-bitcoin-backed-credit-facility-with-coinbase-to-130-million/",
             redirect:
-              "/news-insights/press-releases/hut-8-amends-and-expands-bitcoin-backed-credit-facility-with-coinbase-to-usd-130-million",
+              "/#/press-releases/hut-8-amends-and-expands-bitcoin-backed-credit-facility-with-coinbase-to-usd-130-million",
             name: "redirect--2025-06-24-hut-8-amends-and-expands-bitcoin-backed-credit-facility-with-coinbase-to-130-million-",
           },
           {
             path: "/2025/05/12/hut-8-subsidiary-american-bitcoin-announces-go-public-transaction/",
             redirect:
-              "/news-insights/press-releases/hut-8-subsidiary-american-bitcoin-announces-go-public-transaction",
+              "/#/press-releases/hut-8-subsidiary-american-bitcoin-announces-go-public-transaction",
             name: "redirect--2025-05-12-hut-8-subsidiary-american-bitcoin-announces-go-public-transaction-",
           },
           {
             path: "/2025/05/08/hut-8-reports-first-quarter-2025-results/",
             redirect:
-              "/news-insights/press-releases/hut-8-reports-first-quarter-2025-results",
+              "/#/press-releases/hut-8-reports-first-quarter-2025-results",
             name: "redirect--2025-05-08-hut-8-reports-first-quarter-2025-results-",
           },
           {
             path: "/2025/04/10/hut-8-schedules-first-quarter-2025-earnings-release-and-conference-call/",
             redirect:
-              "/news-insights/press-releases/hut-8-schedules-first-quarter-2025-earnings-release-and-conference-call",
+              "/#/press-releases/hut-8-schedules-first-quarter-2025-earnings-release-and-conference-call",
             name: "redirect--2025-04-10-hut-8-schedules-first-quarter-2025-earnings-release-and-conference-call-",
           },
           {
             path: "/2025/04/04/hut-8-operations-update-for-march-2025/",
             redirect:
-              "/news-insights/press-releases/hut-8-operations-update-for-march-2025",
+              "/#/press-releases/hut-8-operations-update-for-march-2025",
             name: "redirect--2025-04-04-hut-8-operations-update-for-march-2025-",
           },
           {
             path: "/2025/03/31/hut-8-and-eric-trump-launch-american-bitcoin-to-set-a-new-standard-in-bitcoin-mining/",
             redirect:
-              "/news-insights/press-releases/hut-8-and-eric-trump-launch-american-bitcoin-to-set-a-new-standard-in-bitcoin-mining",
+              "/#/press-releases/hut-8-and-eric-trump-launch-american-bitcoin-to-set-a-new-standard-in-bitcoin-mining",
             name: "redirect--2025-03-31-hut-8-and-eric-trump-launch-american-bitcoin-to-set-a-new-standard-in-bitcoin-mining-",
           },
           {
             path: "/2025/03/06/hut-8-operations-update-for-february-2025/",
             redirect:
-              "/news-insights/press-releases/hut-8-operations-update-for-february-2025",
+              "/#/press-releases/hut-8-operations-update-for-february-2025",
             name: "redirect--2025-03-06-hut-8-operations-update-for-february-2025-",
           },
           {
             path: "/2025/03/03/hut-8-reports-fourth-quarter-and-full-year-2024-results/",
             redirect:
-              "/news-insights/press-releases/hut-8-reports-fourth-quarter-and-full-year-2024-results",
+              "/#/press-releases/hut-8-reports-fourth-quarter-and-full-year-2024-results",
             name: "redirect--2025-03-03-hut-8-reports-fourth-quarter-and-full-year-2024-results-",
           },
           {
             path: "/2025/02/04/hut-8-operations-update-for-january-2025/",
             redirect:
-              "/news-insights/press-releases/hut-8-operations-update-for-january-2025",
+              "/#/press-releases/hut-8-operations-update-for-january-2025",
             name: "redirect--2025-02-04-hut-8-operations-update-for-january-2025-",
           },
           {
             path: "/2025/01/07/hut-8-operations-update-for-december-2024/",
             redirect:
-              "/news-insights/press-releases/hut-8-operations-update-for-december-2024",
+              "/#/press-releases/hut-8-operations-update-for-december-2024",
             name: "redirect--2025-01-07-hut-8-operations-update-for-december-2024-",
           },
           {
             path: "/2024/12/19/hut-8s-strategic-bitcoin-reserve-surpasses-1-billion-in-market-value-with-purchase-of-100-million-of-bitcoin/",
             redirect:
-              "/news-insights/press-releases/hut-8-strategic-bitcoin-reserve-surpasses-usd-1-billion-in-market-value-with-purchase-of-usd100",
+              "/#/press-releases/hut-8-strategic-bitcoin-reserve-surpasses-usd-1-billion-in-market-value-with-purchase-of-usd100",
             name: "redirect--2024-12-19-hut-8s-strategic-bitcoin-reserve-surpasses-1-billion-in-market-value-with-purchase-of-100-million-of-bitcoin-",
           },
           {
             path: "/2024/12/18/hut-8-director-amy-wilkinson-named-to-the-2024-nacd-directorship-100/",
             redirect:
-              "/news-insights/press-releases/hut-8-director-amy-wilkinson-named-to-the-2024-nacd-directorship-100",
+              "/#/press-releases/hut-8-director-amy-wilkinson-named-to-the-2024-nacd-directorship-100",
             name: "redirect--2024-12-18-hut-8-director-amy-wilkinson-named-to-the-2024-nacd-directorship-100-",
           },
           {
             path: "/2024/12/05/pacific-telecommunications-council-ptc25/",
             redirect:
-              "/news-insights/press-releases/pacific-telecommunications-council-ptc25",
+              "/#/press-releases/pacific-telecommunications-council-ptc25",
             name: "redirect--2024-12-05-pacific-telecommunications-council-ptc25-",
           },
           {
             path: "/2024/12/05/27th-annual-needham-growth-conference/",
-            redirect:
-              "/news-insights/press-releases/27th-annual-needham-growth-conference",
+            redirect: "/#/press-releases/27th-annual-needham-growth-conference",
             name: "redirect--2024-12-05-27th-annual-needham-growth-conference-",
           },
           {
             path: "/2024/12/05/northland-capital-markets-growth-conference/",
             redirect:
-              "/news-insights/press-releases/northland-capital-markets-growth-conference",
+              "/#/press-releases/northland-capital-markets-growth-conference",
             name: "redirect--2024-12-05-northland-capital-markets-growth-conference-",
           },
           {
             path: "/2024/12/05/informa-tech-the-ai-summit-new-york/",
-            redirect:
-              "/news-insights/press-releases/informa-tech-the-ai-summit-new-york",
+            redirect: "/#/press-releases/informa-tech-the-ai-summit-new-york",
             name: "redirect--2024-12-05-informa-tech-the-ai-summit-new-york-",
           },
           {
             path: "/2024/12/05/hut-8-operations-update-for-november-2024/",
             redirect:
-              "/news-insights/press-releases/hut-8-operations-update-for-november-2024",
+              "/#/press-releases/hut-8-operations-update-for-november-2024",
             name: "redirect--2024-12-05-hut-8-operations-update-for-november-2024-",
           },
           {
             path: "/2024/12/04/hut-8-announces-new-atm-and-stock-repurchase-programs/",
             redirect:
-              "/news-insights/press-releases/hut-8-announces-new-atm-and-stock-repurchase-programs",
+              "/#/press-releases/hut-8-announces-new-atm-and-stock-repurchase-programs",
             name: "redirect--2024-12-04-hut-8-announces-new-atm-and-stock-repurchase-programs-",
           },
           {
             path: "/2024/11/13/hut-8-third-quarter-2024-results/",
-            redirect:
-              "/news-insights/press-releases/hut-8-third-quarter-2024-results",
+            redirect: "/#/press-releases/hut-8-third-quarter-2024-results",
             name: "redirect--2024-11-13-hut-8-third-quarter-2024-results-",
           },
           {
             path: "/2024/11/13/hut-8-reports-third-quarter-2024-results/",
             redirect:
-              "/news-insights/press-releases/hut-8-reports-third-quarter-2024-results",
+              "/#/press-releases/hut-8-reports-third-quarter-2024-results",
             name: "redirect--2024-11-13-hut-8-reports-third-quarter-2024-results-",
           },
           {
             path: "/2024/11/06/hut-8-announces-initial-asic-fleet-upgrade/",
             redirect:
-              "/news-insights/press-releases/hut-8-announces-initial-asic-fleet-upgrade",
+              "/#/press-releases/hut-8-announces-initial-asic-fleet-upgrade",
             name: "redirect--2024-11-06-hut-8-announces-initial-asic-fleet-upgrade-",
           },
           {
             path: "/hut-8-operations-update-for-october-2024/",
             redirect:
-              "/news-insights/press-releases/hut-8-operations-update-for-october-2024",
+              "/#/press-releases/hut-8-operations-update-for-october-2024",
             name: "redirect--hut-8-operations-update-for-october-2024-",
           },
           {
             path: "/media-advisory-hut-8-announces-conference-call-to-discuss-third-quarter-2024-results/",
             redirect:
-              "/news-insights/press-releases/media-advisory-hut-8-announces-conference-call-to-discuss-third-quarter-2024-results",
+              "/#/press-releases/media-advisory-hut-8-announces-conference-call-to-discuss-third-quarter-2024-results",
             name: "redirect--media-advisory-hut-8-announces-conference-call-to-discuss-third-quarter-2024-results-",
           },
           {
             path: "/hut-8-operations-update-for-september-2024/",
             redirect:
-              "/news-insights/press-releases/hut-8-operations-update-for-september-2024",
+              "/#/press-releases/hut-8-operations-update-for-september-2024",
             name: "redirect--hut-8-operations-update-for-september-2024-",
           },
           {
             path: "/hut-8-announces-early-debt-payoff-of-outstanding-loan/",
             redirect:
-              "/news-insights/press-releases/hut-8-announces-early-payoff-of-outstanding-loan",
+              "/#/press-releases/hut-8-announces-early-payoff-of-outstanding-loan",
             name: "redirect--hut-8-announces-early-debt-payoff-of-outstanding-loan-",
           },
           {
             path: "/hut-8-gpu-as-a-service-vertical-goes-live-with-inaugural-deployment/",
             redirect:
-              "/news-insights/press-releases/hut-8-gpu-as-a-service-vertical-goes-live-with-inaugural-deployment",
+              "/#/press-releases/hut-8-gpu-as-a-service-vertical-goes-live-with-inaugural-deployment",
             name: "redirect--hut-8-gpu-as-a-service-vertical-goes-live-with-inaugural-deployment-",
           },
           {
             path: "/hut-8-and-bitmain-expand-innovation-partnership-with-launch-of-next-generation-bitmain-miner/",
             redirect:
-              "/news-insights/press-releases/hut-8-and-bitmain-expand-innovation-partnership-with-launch-of-next-generation-bitmain-miner",
+              "/#/press-releases/hut-8-and-bitmain-expand-innovation-partnership-with-launch-of-next-generation-bitmain-miner",
             name: "redirect--hut-8-and-bitmain-expand-innovation-partnership-with-launch-of-next-generation-bitmain-miner-",
           },
           {
             path: "/hut-8-operations-update-for-august-2024/",
             redirect:
-              "/news-insights/press-releases/hut-8-operations-update-for-august-2024",
+              "/#/press-releases/hut-8-operations-update-for-august-2024",
             name: "redirect--hut-8-operations-update-for-august-2024-",
           },
           {
             path: "/hut-8-reports-second-quarter-2024-results/",
             redirect:
-              "/news-insights/press-releases/hut-8-reports-second-quarter-2024-results",
+              "/#/press-releases/hut-8-reports-second-quarter-2024-results",
             name: "redirect--hut-8-reports-second-quarter-2024-results-",
           },
           {
             path: "/hut-8-announces-new-chief-financial-officer/",
             redirect:
-              "/news-insights/press-releases/hut-8-announces-new-chief-financial-officer",
+              "/#/press-releases/hut-8-announces-new-chief-financial-officer",
             name: "redirect--hut-8-announces-new-chief-financial-officer-",
           },
           {
             path: "/hut-8-operations-update-for-july-2024/",
-            redirect:
-              "/news-insights/press-releases/hut-8-operations-update-for-july-2024",
+            redirect: "/#/press-releases/hut-8-operations-update-for-july-2024",
             name: "redirect--hut-8-operations-update-for-july-2024-",
           },
           {
             path: "/hut-8-executes-definitive-agreements-for-site-in-west-texas-with-205-mw-of-immediately-available-power-capacity/",
             redirect:
-              "/news-insights/press-releases/hut-8-executes-definitive-agreements-for-site-in-west-texas-with-205-mw-of-immediately-available",
+              "/#/press-releases/hut-8-executes-definitive-agreements-for-site-in-west-texas-with-205-mw-of-immediately-available",
             name: "redirect--hut-8-executes-definitive-agreements-for-site-in-west-texas-with-205-mw-of-immediately-available-power-capacity-",
           },
           {
             path: "/hut-8-operations-update-for-june-2024/",
-            redirect:
-              "/news-insights/press-releases/hut-8-operations-update-for-june-2024",
+            redirect: "/#/press-releases/hut-8-operations-update-for-june-2024",
             name: "redirect--hut-8-operations-update-for-june-2024-",
           },
           {
             path: "/hut-8-announces-closing-of-150-million-investment-from-coatue/",
             redirect:
-              "/news-insights/press-releases/hut-8-announces-closing-of-usd150-million-investment-from-coatue",
+              "/#/press-releases/hut-8-announces-closing-of-usd150-million-investment-from-coatue",
             name: "redirect--hut-8-announces-closing-of-150-million-investment-from-coatue-",
           },
           {
             path: "/hut-8-set-to-join-to-russell-3000-index/",
             redirect:
-              "/news-insights/press-releases/hut-8-set-to-join-to-russell-3000-r-index",
+              "/#/press-releases/hut-8-set-to-join-to-russell-3000-r-index",
             name: "redirect--hut-8-set-to-join-to-russell-3000-index-",
           },
           {
             path: "/hut-8-announces-150-million-strategic-investment-from-coatue-to-partner-in-building-next-generation-ai-infrastructure-platform/",
             redirect:
-              "/news-insights/press-releases/hut-8-announces-usd150-million-strategic-investment-from-coatue-to-partner-in-building-next",
+              "/#/press-releases/hut-8-announces-usd150-million-strategic-investment-from-coatue-to-partner-in-building-next",
             name: "redirect--hut-8-announces-150-million-strategic-investment-from-coatue-to-partner-in-building-next-generation-ai-infrastructure-platform-",
           },
           {
             path: "/hut-8-reports-first-quarter-2024/",
             redirect:
-              "/news-insights/press-releases/hut-8-reports-first-quarter-2024-results",
+              "/#/press-releases/hut-8-reports-first-quarter-2024-results",
             name: "redirect--hut-8-reports-first-quarter-2024-",
           },
           {
             path: "/hut-8-operations-update-for-april-2024/",
             redirect:
-              "/news-insights/press-releases/hut-8-operations-update-for-april-2024",
+              "/#/press-releases/hut-8-operations-update-for-april-2024",
             name: "redirect--hut-8-operations-update-for-april-2024-",
           },
           {
             path: "/media-advisory-hut-8-to-release-q1-2024-results-may-15/",
             redirect:
-              "/news-insights/press-releases/media-advisory-hut-8-to-release-q1-2024-results-may-15",
+              "/#/press-releases/media-advisory-hut-8-to-release-q1-2024-results-may-15",
             name: "redirect--media-advisory-hut-8-to-release-q1-2024-results-may-15-",
           },
           {
             path: "/hut-8-optimizes-self-mining-operations-as-miners-come-online-at-salt-creek/",
             redirect:
-              "/news-insights/press-releases/hut-8-optimizes-self-mining-operations-as-miners-come-online-at-salt-creek",
+              "/#/press-releases/hut-8-optimizes-self-mining-operations-as-miners-come-online-at-salt-creek",
             name: "redirect--hut-8-optimizes-self-mining-operations-as-miners-come-online-at-salt-creek-",
           },
           {
             path: "/hut-8-operations-update-for-march-2024/",
             redirect:
-              "/news-insights/press-releases/hut-8-operations-update-for-march-2024",
+              "/#/press-releases/hut-8-operations-update-for-march-2024",
             name: "redirect--hut-8-operations-update-for-march-2024-",
           },
           {
             path: "/hut-8-reports-operating-and-financial-results-for-the-six-months-ended-december-31-2023/",
             redirect:
-              "/news-insights/press-releases/hut-8-reports-operating-and-financial-results-for-the-six-months-ended-december-31-2023",
+              "/#/press-releases/hut-8-reports-operating-and-financial-results-for-the-six-months-ended-december-31-2023",
             name: "redirect--hut-8-reports-operating-and-financial-results-for-the-six-months-ended-december-31-2023-",
           },
           {
             path: "/media-advisory-hut-8-to-release-q4-2023-results-march-28/",
             redirect:
-              "/news-insights/press-releases/media-advisory-hut-8-to-release-q4-2023-results-march-28",
+              "/#/press-releases/media-advisory-hut-8-to-release-q4-2023-results-march-28",
             name: "redirect--media-advisory-hut-8-to-release-q4-2023-results-march-28-",
           },
           {
             path: "/hut-8-streamlines-operations-with-closure-of-drumheller-site/",
             redirect:
-              "/news-insights/press-releases/hut-8-streamlines-operations-with-closure-of-drumheller-site",
+              "/#/press-releases/hut-8-streamlines-operations-with-closure-of-drumheller-site",
             name: "redirect--hut-8-streamlines-operations-with-closure-of-drumheller-site-",
           },
           {
             path: "/hut-8-operations-update-for-february-2024/",
             redirect:
-              "/news-insights/press-releases/hut-8-operations-update-for-february-2024",
+              "/#/press-releases/hut-8-operations-update-for-february-2024",
             name: "redirect--hut-8-operations-update-for-february-2024-",
           },
           {
             path: "/hut-8-commences-construction-of-new-digital-asset-mining-site-in-culberson-county-announces-new-treasury-strategy/",
             redirect:
-              "/news-insights/press-releases/hut-8-commences-construction-of-new-digital-asset-mining-site-in-culberson-county-announces-new",
+              "/#/press-releases/hut-8-commences-construction-of-new-digital-asset-mining-site-in-culberson-county-announces-new",
             name: "redirect--hut-8-commences-construction-of-new-digital-asset-mining-site-in-culberson-county-announces-new-treasury-strategy-",
           },
           {
             path: "/hut-8-completes-transaction-to-acquire-four-power-generation-facilities-totaling-310-mw-in-partnership-with-macquarie/",
             redirect:
-              "/news-insights/press-releases/hut-8-completes-transaction-to-acquire-four-power-generation-facilities-totaling-310-mw-in",
+              "/#/press-releases/hut-8-completes-transaction-to-acquire-four-power-generation-facilities-totaling-310-mw-in",
             name: "redirect--hut-8-completes-transaction-to-acquire-four-power-generation-facilities-totaling-310-mw-in-partnership-with-macquarie-",
           },
           {
             path: "/hut-8-announces-leadership-transition/",
-            redirect:
-              "/news-insights/press-releases/hut-8-announces-leadership-transition",
+            redirect: "/#/press-releases/hut-8-announces-leadership-transition",
             name: "redirect--hut-8-announces-leadership-transition-",
           },
           {
             path: "/hut-8-operations-update-for-january-2024/",
             redirect:
-              "/news-insights/press-releases/hut-8-operations-update-for-january-2024",
+              "/#/press-releases/hut-8-operations-update-for-january-2024",
             name: "redirect--hut-8-operations-update-for-january-2024-",
           },
           {
             path: "/hut-8-concluding-managed-services-at-kearney-nebraska-and-granbury-texas-in-q2/",
             redirect:
-              "/news-insights/press-releases/hut-8-concluding-managed-services-at-kearney-nebraska-and-granbury-texas-in-q2",
+              "/#/press-releases/hut-8-concluding-managed-services-at-kearney-nebraska-and-granbury-texas-in-q2",
             name: "redirect--hut-8-concluding-managed-services-at-kearney-nebraska-and-granbury-texas-in-q2-",
           },
           {
             path: "/hut-8-proceeding-with-full-mining-operations-plan-to-provide-managed-services-to-ionic-digital-in-connection-with-celsius-network-llc-bankruptcy-proceedings/",
             redirect:
-              "/news-insights/press-releases/hut-8-proceeding-with-full-mining-operations-plan-to-provide-managed-services-to-ionic-digital",
+              "/#/press-releases/hut-8-proceeding-with-full-mining-operations-plan-to-provide-managed-services-to-ionic-digital",
             name: "redirect--hut-8-proceeding-with-full-mining-operations-plan-to-provide-managed-services-to-ionic-digital-in-connection-with-celsius-network-llc-bankruptcy-proceedings-",
           },
           {
             path: "/chief-commercial-officer-matt-prusak-leaving-hut-8-as-part-of-planned-transition-to-celsius-bitcoin-mining-company/",
             redirect:
-              "/news-insights/press-releases/chief-commercial-officer-matt-prusak-leaving-hut-8-as-part-of-planned-transition-to-celsius",
+              "/#/press-releases/chief-commercial-officer-matt-prusak-leaving-hut-8-as-part-of-planned-transition-to-celsius",
             name: "redirect--chief-commercial-officer-matt-prusak-leaving-hut-8-as-part-of-planned-transition-to-celsius-bitcoin-mining-company-",
           },
           {
             path: "/hut-8-corp-responds-to-misleading-short-report/",
             redirect:
-              "/news-insights/press-releases/hut-8-responds-to-misleading-short-report",
+              "/#/press-releases/hut-8-responds-to-misleading-short-report",
             name: "redirect--hut-8-corp-responds-to-misleading-short-report-",
           },
           {
             path: "/hut-8-corp-media-statement-on-short-report/",
-            redirect:
-              "/news-insights/press-releases/hut-8-media-statement-on-short-report",
+            redirect: "/#/press-releases/hut-8-media-statement-on-short-report",
             name: "redirect--hut-8-corp-media-statement-on-short-report-",
           },
           {
             path: "/media-advisory-hut-8-corp-to-ring-opening-bell-at-nasdaq-in-new-york-on-january-18-2024/",
             redirect:
-              "/news-insights/press-releases/media-advisory-hut-8-to-ring-opening-bell-at-nasdaq-in-new-york-on-january-18-2024",
+              "/#/press-releases/media-advisory-hut-8-to-ring-opening-bell-at-nasdaq-in-new-york-on-january-18-2024",
             name: "redirect--media-advisory-hut-8-corp-to-ring-opening-bell-at-nasdaq-in-new-york-on-january-18-2024-",
           },
           {
             path: "/hut-8-announces-us65-million-amended-and-restated-credit-facility-with-coinbase/",
             redirect:
-              "/news-insights/press-releases/hut-8-announces-usd-65-million-amended-and-restated-credit-facility-with-coinbase",
+              "/#/press-releases/hut-8-announces-usd-65-million-amended-and-restated-credit-facility-with-coinbase",
             name: "redirect--hut-8-announces-us65-million-amended-and-restated-credit-facility-with-coinbase-",
           },
           {
             path: "/hut-8-receives-court-approval-in-its-stalking-horse-bid-for-four-natural-gas-power-plants-including-the-north-bay-bitcoin-mine/",
             redirect:
-              "/news-insights/press-releases/hut-8-receives-court-approval-in-its-stalking-horse-bid-for-four-natural-gas-power-plants",
+              "/#/press-releases/hut-8-receives-court-approval-in-its-stalking-horse-bid-for-four-natural-gas-power-plants",
             name: "redirect--hut-8-receives-court-approval-in-its-stalking-horse-bid-for-four-natural-gas-power-plants-including-the-north-bay-bitcoin-mine-",
           },
           {
             path: "/hut-8-operations-update-for-december-2023/",
             redirect:
-              "/news-insights/press-releases/hut-8-operations-update-for-december-2023",
+              "/#/press-releases/hut-8-operations-update-for-december-2023",
             name: "redirect--hut-8-operations-update-for-december-2023-",
           },
           {
             path: "/court-grants-approval-for-hut-8-to-proceed-with-full-mining-operations-plan-in-connection-to-celsius-network-llc-bankruptcy-proceedings/",
             redirect:
-              "/news-insights/press-releases/court-grants-approval-for-hut-8-to-proceed-with-full-mining-operations-plan-in-connection-to",
+              "/#/press-releases/court-grants-approval-for-hut-8-to-proceed-with-full-mining-operations-plan-in-connection-to",
             name: "redirect--court-grants-approval-for-hut-8-to-proceed-with-full-mining-operations-plan-in-connection-to-celsius-network-llc-bankruptcy-proceedings-",
           },
           {
             path: "/hut-8-selected-by-celsius-debtors-to-build-out-cedarvale-texas-site/",
             redirect:
-              "/news-insights/press-releases/hut-8-selected-by-celsius-debtors-to-build-out-cedarvale-texas-site",
+              "/#/press-releases/hut-8-selected-by-celsius-debtors-to-build-out-cedarvale-texas-site",
             name: "redirect--hut-8-selected-by-celsius-debtors-to-build-out-cedarvale-texas-site-",
           },
           {
             path: "/update-on-hut-8s-stalking-horse-bid-for-four-natural-gas-power-plants-including-the-north-bay-bitcoin-mine/",
             redirect:
-              "/news-insights/press-releases/hut-8-receives-court-approval-in-its-stalking-horse-bid-for-four-natural-gas-power-plants",
+              "/#/press-releases/hut-8-receives-court-approval-in-its-stalking-horse-bid-for-four-natural-gas-power-plants",
             name: "redirect--update-on-hut-8s-stalking-horse-bid-for-four-natural-gas-power-plants-including-the-north-bay-bitcoin-mine-",
           },
           {
             path: "/hut-8-operations-update-for-november-2023/",
             redirect:
-              "/news-insights/press-releases/hut-8-operations-update-for-november-2023",
+              "/#/press-releases/hut-8-operations-update-for-november-2023",
             name: "redirect--hut-8-operations-update-for-november-2023-",
           },
           {
             path: "/hut-8-corp-hut-8-and-usbtc-announce-completion-of-business-combination/",
             redirect:
-              "/news-insights/press-releases/hut-8-and-usbtc-announce-completion-of-business-combination",
+              "/#/press-releases/hut-8-and-usbtc-announce-completion-of-business-combination",
             name: "redirect--hut-8-corp-hut-8-and-usbtc-announce-completion-of-business-combination-",
           },
           { path: "*", redirect: "/", name: "custom-404" },
@@ -12186,7 +12176,7 @@
         v = {
           article: function (e) {
             return {
-              href: "/news-insights/"
+              href: "/#/"
                 .concat(h[e.category] || Object(o.v)(e.category), "/")
                 .concat(e.slug),
               imageSrc: e.thumbnail || z(e.category, e.heroTheme),
@@ -12261,7 +12251,7 @@
             article: function () {
               return function (e) {
                 return {
-                  href: "/news-insights/"
+                  href: "/#/"
                     .concat(h[e.category] || e.category, "/")
                     .concat(e.slug),
                   type: e.category.replace("-", " "),
