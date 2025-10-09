@@ -6172,8 +6172,8 @@
                 "/": "Home",
                 "/#": "Our Platform",
                 "/power": "Power",
-                "/#": "Digital Infrastructure",
-                "/#": "Compute",
+                "/#": "Property Developer Solutions",
+                "/#": "Property Developer Solutions",
                 "/#": "About Us",
                 "/#": "News & Insights",
                 "/#": "Investors",
@@ -6869,66 +6869,6 @@
                             staticClass: "secondary-link",
                             attrs: {
                               to: "/#",
-                              "aria-label": "Stock Information",
-                            },
-                          },
-                          [e._v("Stock Information")],
-                        ),
-                        e._v(" "),
-                        t(
-                          "NuxtLink",
-                          {
-                            staticClass: "secondary-link",
-                            attrs: {
-                              to: "/#",
-                              "aria-label": "Financials",
-                            },
-                          },
-                          [e._v("Financials")],
-                        ),
-                        e._v(" "),
-                        t(
-                          "NuxtLink",
-                          {
-                            staticClass: "secondary-link",
-                            attrs: {
-                              to: "/#",
-                              "aria-label": "Events & Presentations",
-                            },
-                          },
-                          [e._v("Events & Presentations")],
-                        ),
-                        e._v(" "),
-                        t(
-                          "NuxtLink",
-                          {
-                            staticClass: "secondary-link",
-                            attrs: {
-                              to: "/#",
-                              "aria-label": "SEC Filings",
-                            },
-                          },
-                          [e._v("SEC Filings")],
-                        ),
-                        e._v(" "),
-                        t(
-                          "NuxtLink",
-                          {
-                            staticClass: "secondary-link",
-                            attrs: {
-                              to: "/#",
-                              "aria-label": "Governance",
-                            },
-                          },
-                          [e._v("Governance")],
-                        ),
-                        e._v(" "),
-                        t(
-                          "NuxtLink",
-                          {
-                            staticClass: "secondary-link",
-                            attrs: {
-                              to: "/#",
                               "aria-label": "FAQ",
                             },
                           },
@@ -7020,7 +6960,7 @@
                       {
                         staticClass: "x-social",
                         attrs: {
-                          href: "https://x.com/Hut8Corp",
+                          href: "https://x.com/hellostima",
                           "aria-label": "Follow us on X (formerly Twitter)",
                           target: "_blank",
                           rel: "noopener noreferrer",
@@ -7146,7 +7086,7 @@
                 {
                   staticClass: "main-link",
                   attrs: {
-                    href: "https://job-boards.greenhouse.io/hut8",
+                    href: "/#",
                     "aria-label": "Careers",
                     target: "_blank",
                     rel: "noopener noreferrer",
@@ -7544,7 +7484,7 @@
                             "data-stagger-index": e.checkIsMobile() ? 5 : 1,
                           },
                         },
-                        [e._v("Our Businesses")],
+                        [e._v("Our Markets")],
                       ),
                       e._v(" "),
                       t("ul", { staticClass: "business-items" }, [
@@ -7560,7 +7500,7 @@
                               "nuxt-link",
                               {
                                 staticClass: "business-item-link",
-                                attrs: { to: "/power" },
+                                attrs: { to: "/#" },
                               },
                               [
                                 t(
@@ -7628,16 +7568,16 @@
                                       staticClass: "hover-underline",
                                     }),
                                     e._v(" "),
-                                    t("div", [e._v("Power")]),
+                                    t("div", [e._v("Smart Meters")]),
                                   ]),
                                   e._v(" "),
                                   t(
                                     "div",
                                     { staticClass: "business-item-list" },
                                     [
-                                      t("span", [e._v("Power Generation")]),
+                                      t("span", [e._v("Nyumbani Meters")]),
                                       e._v("  |  "),
-                                      t("span", [e._v("Managed Services")]),
+                                      t("span", [e._v("Stima Mkononi")]),
                                     ],
                                   ),
                                   e._v(" "),
@@ -7734,7 +7674,9 @@
                                       staticClass: "hover-underline",
                                     }),
                                     e._v(" "),
-                                    t("div", [e._v("Digital Infrastructure")]),
+                                    t("div", [
+                                      e._v("Property Developer Solutions"),
+                                    ]),
                                   ]),
                                   e._v(" "),
                                   t(
@@ -7840,18 +7782,18 @@
                                       staticClass: "hover-underline",
                                     }),
                                     e._v(" "),
-                                    t("div", [e._v("Compute")]),
+                                    t("div", [e._v("Industrial Solutions")]),
                                   ]),
                                   e._v(" "),
                                   t(
                                     "div",
                                     { staticClass: "business-item-list" },
                                     [
-                                      t("span", [e._v("Bitcoin Mining")]),
+                                      t("span", [e._v("Viwanda Vizuri")]),
                                       e._v("  |  "),
-                                      t("span", [e._v("Data Center Cloud")]),
+                                      t("span", [e._v("Ushirikiano Halisi ")]),
                                       e._v("  |  "),
-                                      t("span", [e._v("GPU-as-a-Service")]),
+                                      t("span", [e._v("Jua la Kesho")]),
                                     ],
                                   ),
                                   e._v(" "),
@@ -7896,7 +7838,7 @@
                   "a",
                   {
                     attrs: {
-                      href: "https://job-boards.greenhouse.io/hut8",
+                      href: "/#",
                       target: "_blank",
                     },
                   },
@@ -7907,7 +7849,7 @@
                   "a",
                   {
                     attrs: {
-                      href: "https://support.hut8.com/esc",
+                      href: "/#",
                       target: "_blank",
                     },
                   },
